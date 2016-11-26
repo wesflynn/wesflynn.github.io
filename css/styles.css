@@ -1,0 +1,69 @@
+/* adding in custom fonts to match the original movie poster*/
+@font-face {
+    font-family: myFirstFont;
+    src: url("../fonts/Halja-Regular.otf") format("opentype");}
+@font-face {
+    font-family: mySecondFont;
+    src: url("../fonts/Halja-Illuminated.otf") format("opentype");} /*attempted but ultimatly couldn't get the illuminated font to work , too intricate.thats what the spans are around the indivdual letters for*/
+@font-face { 
+	font-family: myThirdFont;
+	src: url("../fonts/Univers LT 39 Thin Ultra Condensed.ttf");}
+header p {
+	font-size: 34px;
+	position: relative;
+	bottom:20px;
+	color:#8f7900;}
+main{
+	position: relative;
+	bottom:35px;}
+h1 {
+  position:relative;
+  top:170px;
+  line-height: 80%;
+  font-family: myFirstFont;
+  font-size: 72px;
+  background: -webkit-linear-gradient(#ff8200, #ffd700); /*using webkit tools to apply a gradient to the text*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+p { 
+	line-height: 70%;
+	font-family: myFirstFont;
+	color:#ffd700;
+	font-size: 36px;}
+strong {color: #fff09f;}
+body {
+	text-align: center;
+	background-repeat: no-repeat;
+    background-position: center top; background-size: auto 110%;
+	background-image: url(../images/wwdits2.jpg); }
+footer {
+	top:110px;
+	position:relative;}
+footer p {color:#ff8200;}
+#credits {  /* small bug in credits i cant seem to identify , seems that only the 2nd and third line of text touch on the top and bottom but not on other lines?*/
+	position: relative;
+	bottom:20px;
+	font-size:28px; /*made this font just like what you would traditonally see in movie posters credits*/
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	font-family: myThirdFont;}
+small { font-size:65%; }
+#web {
+	position: relative;
+	bottom: 50px;
+	font-size:28px;
+	color:#804100;}
+a{text-decoration: none;}
+a:visited {color:grey;}
+.critics {  
+	font-size: 8px;
+	text-transform: uppercase;
+	font-family: georgia; /*set this to georgia because i found it more difficult to identify this particular font , regardless georgia seem a fairly accurate match*/
+	color:white; }
+ul{
+  justify-content: center; /*this arranges the the list elements to be inline*/
+  display:flex;  
+  list-style:none}
+ul li p{ 
+margin-bottom: 4%;
+margin-top: 4%;}
