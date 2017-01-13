@@ -1,69 +1,183 @@
-/* adding in custom fonts to match the original movie poster*/
-@font-face {
+@font-face{ /*loads my custom fonts*/
     font-family: myFirstFont;
-    src: url("../fonts/Halja-Regular.otf") format("opentype");}
-@font-face {
+    src: url("../fonts/FerroRosso.ttf") format("truetype");
+}
+@font-face{
     font-family: mySecondFont;
-    src: url("../fonts/Halja-Illuminated.otf") format("opentype");} /*attempted but ultimatly couldn't get the illuminated font to work , too intricate.thats what the spans are around the indivdual letters for*/
-@font-face { 
-	font-family: myThirdFont;
-	src: url("../fonts/Univers LT 39 Thin Ultra Condensed.ttf");}
-header p {
-	font-size: 34px;
+    src: url("../fonts/MISTRAL.ttf") format("truetype");
+}
+body{
+	background-color: black; 
+	font-family: Arial, sans-serif;
+	font-size: 125%;
+	text-align:left;
+}
+nav{
+	text-align: left;
+	position: relative;
+	width:auto;
+	height:100%;
+}
+h1{
+	position: relative;
+	left:60px;
+	font-family:myFirstFont,Arial,sans-serif;
+	font-size:400%;
+	display: inline;
+	color:red;
+	text-align: right;
+}
+h2{
+	position: relative;
+	left: 60px;
+	font-family:mySecondFont,Arial;
+	font-size: 400%;
+	display: inline;
+	color: red;
+	text-align: right;
+}
+h3{
+	font-family:Verdana,arial;
+	font-size: 36px;
+	color:white;
+	margin:0;
+	position: relative;
+	bottom:30px;
+}
+h4{
+	color:red;
+	font-size: 120%;
+}
+p{
+	color: white;
+}
+img{
+	vertical-align: -10%;
+	height:auto;
+	width:50%;
 	position: relative;
 	bottom:20px;
-	color:#8f7900;}
-main{
-	position: relative;
-	bottom:35px;}
-h1 {
-  position:relative;
-  top:170px;
-  line-height: 80%;
-  font-family: myFirstFont;
-  font-size: 72px;
-  background: -webkit-linear-gradient(#ff8200, #ffd700); /*using webkit tools to apply a gradient to the text*/
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
-p { 
-	line-height: 70%;
-	font-family: myFirstFont;
-	color:#ffd700;
-	font-size: 36px;}
-strong {color: #fff09f;}
-body {
-	text-align: center;
-	background-repeat: no-repeat;
-    background-position: center top; background-size: auto 110%;
-	background-image: url(../images/wwdits2.jpg); }
-footer {
-	top:110px;
-	position:relative;}
-footer p {color:#ff8200;}
-#credits {  /* small bug in credits i cant seem to identify , seems that only the 2nd and third line of text touch on the top and bottom but not on other lines?*/
-	position: relative;
-	bottom:20px;
-	font-size:28px; /*made this font just like what you would traditonally see in movie posters credits*/
-	text-transform: uppercase;
-	letter-spacing: 0px;
-	font-family: myThirdFont;}
-small { font-size:65%; }
-#web {
-	position: relative;
-	bottom: 50px;
-	font-size:28px;
-	color:#804100;}
-a{text-decoration: none;}
-a:visited {color:grey;}
-.critics {  
-	font-size: 8px;
-	text-transform: uppercase;
-	font-family: georgia; /*set this to georgia because i found it more difficult to identify this particular font , regardless georgia seem a fairly accurate match*/
-	color:white; }
+}
 ul{
-  justify-content: center; /*this arranges the the list elements to be inline*/
-  display:flex;  
-  list-style:none}
-ul li p{ 
-margin-bottom: 4%;
-margin-top: 4%;}
+	display:inline-block;
+	padding:0px;
+	margin:0px;
+	list-style: none;
+	text-align: left;
+}
+li{
+	text-align:left;
+	font-family: Arial, sans-serif;
+	background-clip: padding-box;
+	display: block;
+	position: relative;
+}
+li a{
+	background-clip:padding-box;
+	background-color:red;
+	display:block;
+	text-decoration: none;
+	color:white;
+}
+li a:hover{
+	color: black;
+	border-color:white;
+}
+main{
+	clear: both;
+}
+footer p{ 
+	width: 50%;
+	text-align: right;
+	font-size: 80%; 
+	font-family: arial;
+	color: red;
+	bottom:25px;
+	margin: 0;
+}
+i{
+ 	color:white;
+ 	text-align: left;
+ 	position: relative;
+ 	bottom: 70px;
+ 	left: 15px;
+}
+.sidenav{
+    height: 100%;
+    width: 0; /*change this with JavaScript */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:red;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:white;
+    display: block;
+    transition: 0.3s
+}
+.sidenav .closebtn{
+    position: absolute;
+    z-index: 10;
+    top: -60px;
+    right: 20px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+aside{
+	width: 300px;
+	position:absolute;
+	height: auto;
+	text-align: center;
+	bottom:5%;
+	left:70%;
+	position: fixed;
+}
+article{
+	width: 50%;
+	height:auto;
+}
+main{ 
+	transition: margin-left .5s;
+    padding: 20px;
+}
+#push1{
+	transition: margin-left .5s;
+}
+#push3{
+	transition: margin-left .5s;
+}
+#thumbnails{
+	width:50%;
+	margin-top: 40px;
+}
+#thumbnails img{
+	display: inline-block;
+	width:15%;
+	margin: 0 3px 0 3px;
+	height:auto;
+}
+aside p{ 
+	margin:5px 0 5px 0;
+}
+aside img{
+	height:auto;
+}
+article i {
+	bottom: 0;
+ 	left: 0;
+}
+article a{
+	text-decoration: none;
+	color:red;
+}
+#email{ /*hides the email , it will show again when the user clicks on email us,
+	through the use of javascript*/
+	visibility: hidden;
+}

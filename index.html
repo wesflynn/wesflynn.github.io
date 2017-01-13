@@ -2,82 +2,59 @@
 <html lang="en">
 
 	<head>
-		<meta charset="UTF-8"> <!--set text encoding-->
-    	<title>What We Do In The Shadows | Movie Poster</title> <!--setting page title-->
-    	<link rel="stylesheet" href="css/styles.css" >
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" >
+		<title>FERRARI TESTAROSSA</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/stylesmin.css" media="screen and (min-width:421px) and (max-width:1025px)">
+		<link rel="stylesheet" href="css/stylesmin2.css" media="screen and (max-width:420px)">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="icon" href="images/favicon.png">
 	</head>
 
 	<body>
-
 		<header>
-		<p>From the creators of <strong>BOY</strong> and <strong>Flight of the Conchords</strong></p>
+			<h1 id="push1">Ferrari</h1> 
+			<h2>Testarossa</h2>
+			<nav>
+				<i onclick="openNav()" class="fa fa-bars fa-2x"></i>
+				<ul id="mySidenav" class="sidenav">
+					<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="underthehood.html">UNDER THE HOOD</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="contactus.html">CONTACT US</a></li>
+				</ul>	
+			</nav>
 		</header>
 
-		<main>
-			<ul> <!-- first list of quotes by critics-->
-				<li>
-					<p>"Hillarous"</p>
-					<p class="critics"> The Hollywood Reporter</p>
-				</li>
-				<li>
-					<p>"Hillarous"</p>
-					<p class="critics">Geek Tyrant</p>
-				</li>
-				<li>
-					<p>"Hillarous"</p>
-					<p class="critics">Billboard</p>
-				</li>
-				<li>
-					<p>"Hillarous"</p>
-					<p class="critics">Indiewire</p>
-				</li>						
-				<li>
-					<p>"Hillarous"</p>
-					<p class="critics">Blogcritic.org</p>
-				</li>
-				<li>
-					<p>"Hillarous"</p>
-					<p class="critics">Ain't It Cool News</p>
-				</li>				
-			</ul>
+		<main id="push2">
+			<img src="images/car.jpg" alt=Testarossa>
 
-			<ul> <!-- second list of quotes by critics-->
-				<li>
-					<p>"Hillarous"</p>
-					<p class="critics">Twitch</p>
-				</li>
-				<li>
-					<p>"Hillarous"</p>
-					<p class="critics">Vanity Fair</p>
-				</li>
-				<li>
-					<p>"Hillarous"</p>
-					<p class="critics">Film Pulse</p>
-				</li>	
-				<li>
-					<p>"Hillarous"</p>
-					<p class="critics">Movies.com</p>
-				</li>	
-				<li>
-					<p>"Hillarous"</p>
-					<p class="critics">Backstory</p>
-				</li>
-				<li>
-					<p>"Hillarous"</p>
-					<p class="critics">Crave</p>
-				</li>															
-			</ul>
-			<h1><span>W</span>hat We Do</h1> <!-- h1 with formatting in place so that the illuminated version of the font could be applied to the first letter of "what" and "shadows"-->
-			<h1>In The <span>S</span>hadows</h1>
+			<article>
+				<p>
+				The Paris Motor Show in October 1984 saw the return of the glorious Testarossa as heir to the 512 BBi. Pininfarina’s design broke somewhat with tradition and was striking and innovative. The side intakes were larger than on the previous model and this constraint saw the introduction of the long side strakes that would become the Testarossa’s most recognisable feature.
+				</p>
+			</article>
+
+			<aside>
+				<p>Welcome to the Ferrari Testarossa Fanpage</p>
+				<br>
+				<br>
+				<img src="images/interior.jpg" alt="interior">
+				<img src="images/interior2.jpg" alt="interior2">
+				<img src="images/girl.jpg" alt="girl">
+				<img src="images/girl2.jpg" alt="girl2">
+				<p>A website dedicated to the masterpeice that is the Ferrari Testarossa.</p>
+			</aside>
+
 		</main>
 
-		<footer>
-			<p>Some interviews with some vampires</p>
-			<p id="credits">unison  films	defender  films <small>and</small> the new zealand documentry board <small>in assosication with</small> the new zealand film commission <small>present</small> a shadow production "what we do in the shadows" <br> jemaine clement taika waititi jonathan brugh cori gonzalez-macuer stu rutherford<br>
-			<small>casting by</small>tina cleary <small>production designer</small>ra vincent<small>cinematography by</small>dj stipsen / richard bluck <small> music by</small> plan 9 <small>edited by</small>jonno woodford-robinson<br><small>produced by</small>taika waititi chelsea winstanley emanuel michael <small> written and directed by</small>jemaine clement<small>&amp;</small>taiki waititi</p>
-			<p id="web"><a href="http://whatwedointheshadows.com">whatwedointheshadows.com</a>  #deliciousnecks</p> <!--added link to the offical movie website although it seems the website is down-->
+		<footer id="push3">
+			<p><small>©Ferrari 2016</small></p>
 		</footer>
-
+		<script type="text/javascript" src="javascript/script.js"></script>
 	</body>
-	
+
 </html>
